@@ -1,0 +1,109 @@
+:root {
+  --accent: #f3c26b;
+  --text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  background: url("/images/back.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: var(--text);
+}
+
+.center-box {
+  text-align: center;
+  margin: 40px 0;
+  background: rgba(0,0,0,0.55);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.center-box h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.filter-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text);
+  font-weight: 600;
+  transition: 0.2s;
+}
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+.filter-btn.active {
+  background: var(--accent);
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 220px;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.img-wrap {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 12px;
+  text-align: center;
+}
+.prod-name {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.prod-price {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+
+
+
